@@ -45,7 +45,7 @@ class LoggerHandler(logging.Logger):
         self.addHandler(stream_handler)
 
 
-__log_file_name = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+__log_file_name = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 root_path = get_project_root()
 logger = LoggerHandler(name='my_app_logger', logger_level='DEBUG',
                        file=f"{os.path.join(root_path, 'logs',__log_file_name)}.log")

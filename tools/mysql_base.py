@@ -3,9 +3,9 @@ from logger_base import logger
 
 
 class MysqlBase(object):
-    def __init__(self, host='175.178.73.5',
+    def __init__(self, host='43.139.231.99',
                  user='root',
-                 password='6f4c219eeb4088d8',
+                 password='Therzyx@123',
                  database='xtdx_qa',
                  charset='utf8mb4',
                  cursorclass=pymysql.cursors.DictCursor):
